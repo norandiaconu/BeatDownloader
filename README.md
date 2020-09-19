@@ -1,4 +1,4 @@
-# BeatDownloader
+# BeatDownloader 1.0.1
 This utility allows you to  download all of the ranked custom levels that you don't currently have for Beat Saber.
 <img src="https://i.imgur.com/fz0kwft.png" alt="BeatDownloader"/>
 ## Prerequisites
@@ -17,9 +17,9 @@ This is used for JSON parsing and only needs to be copied into the same folder t
 
 Current release: https://github.com/benibela/xidel/releases/download/Xidel_0.9.8/xidel-0.9.8.win32.zip  
 ## Downloading
-With all that out of the way, just double-click `BeatDownload.bat` and a command prompt window will display showing the current progress!
+With all that out of the way, just double-click `BeatDownloader.bat` and a dialog box will open to pick your Beat Saber install directory. Select your "Beat Saber" folder, click OK, and the command prompt window will display showing the current progress!
 
-Note: As of writing there are currently 625 ranked custom levels, so this will take a while to complete. Closing the command prompt window will stop the process from running, but this can be restarted at a later time skipping the custom levels that have already been downloaded.
+Note: As of writing there are currently 625 ranked custom levels, so this will take a while to complete. Closing the command prompt window will stop the process from running, but this can be restarted at a later time skipping the custom levels that have already been downloaded. The next time you start `BeatDownloader.bat`, your previously chosen directory will be automagically loaded. Deleting the generated `BeatPath.txt` will make the directory picker come up again if you have moved your Beat Saber install location.
 ## Credits
 Beat Saver: https://beatsaver.com/  
 Beat Savior: https://beat-savior.herokuapp.com/  
