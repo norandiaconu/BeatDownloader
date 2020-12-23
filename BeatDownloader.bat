@@ -19,7 +19,13 @@ if [!beatSaberPath!]==[] (
 echo Using path: !beatSaberPath!
 
 curl -o response.json https://beat-savior.herokuapp.com/api/maps/ranked
-xidel response.json --xpath ".//maps/Key" > output.txt
+echo Got list of maps
+xidel response.json --xpath ".//key" > output.txt
+echo Converted maps to keys to open in beatsaver://key url
+echo Please choose a timeout number between download requests.
+:settime
+set /p time="Recommended between 4-10: "
+if %time% leq 0 echo NUMBER TOO LOW&goto settime
 for /f %%c in ('Find "" /v /c ^< output.txt') do set total=%%c
 set curr=0
 for /f "tokens=*" %%d in (output.txt) do (
@@ -28,7 +34,7 @@ for /f "tokens=*" %%d in (output.txt) do (
    ) else (
       echo "Saving new custom level: %%d"
       start beatsaver://%%d
-      timeout 10 >nul
+      timeout %time% >nul
    )
    set /a "curr+=1"
    echo Completed: !curr! / %total%
