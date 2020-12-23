@@ -19,7 +19,7 @@ if [!beatSaberPath!]==[] (
 echo Using path: !beatSaberPath!
 
 curl -o response.json https://beat-savior.herokuapp.com/api/maps/ranked
-xidel response.json --xpath ".//maps/Key" > output.txt
+xidel response.json --xpath ".//key" > output.txt
 for /f %%c in ('Find "" /v /c ^< output.txt') do set total=%%c
 set curr=0
 for /f "tokens=*" %%d in (output.txt) do (
