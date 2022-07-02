@@ -1,4 +1,4 @@
-// #!/usr/bin/env node
+#!/usr/bin/env node
 import fetch from "node-fetch";
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
