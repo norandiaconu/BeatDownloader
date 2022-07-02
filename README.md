@@ -1,5 +1,19 @@
-# BeatDownloader 1.0.2
+# BeatDownloader 1.1.0
+
 This utility allows you to download all of the ranked custom levels that you don't currently have for Beat Saber.
+
+## Installation
+
+`npm i beat-downloader`
+
+## Usage
+
+- ### Want to use the default Beat Saber install directory (C:/Program Files (x86)/Steam/steamapps/common/Beat Saber/Beat Saber_Data/CustomLevels)?
+  - `npx beat-downloader`
+- ### Prefer to provide your own? (Please include /Beat Saber_Data/CustomLevels)
+  - `npx beat-downloader C:\myFavouriteDirectory`
+
+## Everything below is now deprecated and no longer needed
 <img src="https://i.imgur.com/fz0kwft.png" alt="BeatDownloader"/>
 ## Prerequisites
 ### ModAssistant
