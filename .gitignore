@@ -1,0 +1,6 @@
+/node_modules
+/.node-persist
+xidel.exe
+response.json
+user.config
+index2.*
